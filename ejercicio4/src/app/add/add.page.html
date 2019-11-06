@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Add a new Product</ion-card-title>
+      <ion-card-subtitle>Fill the following form and click Add</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Product name</ion-label>
+        <ion-input type="text" placeholder="e.g: Red carpet" [(ngModel)]="product.name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Price</ion-label>
+        <ion-input type="number" placeholder="€" [(ngModel)]="product.price"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Quantity</ion-label>
+          <ion-input type="number" [(ngModel)]="product.quantity"></ion-input>
+        </ion-item>
+      <ion-button (click)="add()">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Add
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
