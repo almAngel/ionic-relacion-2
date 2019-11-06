@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>exercise2</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-item>
+        <ion-label>
+            <p>Inches</p>
+        </ion-label>
+        <ion-input type="number" placeholder="in" [(ngModel)]="inches" (click)="focusInches()" (keyup)="convert()" min="0"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>
+            <p>Centimeters</p>
+        </ion-label>
+        <ion-input type="number" placeholder="cm" [(ngModel)]="centimeters" (click)="focusCentimeters()" (keyup)="convert()" min="0"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label>
+            <p>Meters</p>
+        </ion-label>
+        <ion-input type="number" placeholder="m" [(ngModel)]="meters" (click)="focusMeters()" (keyup)="convert()" min="0"></ion-input>
+    </ion-item>
+
+</ion-content>

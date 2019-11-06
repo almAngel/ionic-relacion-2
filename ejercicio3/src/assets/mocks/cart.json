@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Comida de perro",
+        "price": 10,
+        "quantity": 1
+    },
+    {
+        "name": "Televisor 4k",
+        "price": 600,
+        "quantity": 2
+    },
+    {
+        "name": "Perro Chihuahua",
+        "price": 700,
+        "quantity": 1
+    },
+    {
+        "name": "Perro Pitbull",
+        "price": 1400,
+        "quantity": 1
+    }
+]
