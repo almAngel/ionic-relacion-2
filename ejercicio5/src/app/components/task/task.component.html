@@ -1,0 +1,19 @@
+<ion-card>
+  <ion-buttons slot="end" class="padding">
+    <ion-button (click)="edit(id)">
+      EDIT
+      <ion-icon slot="end" name="create"></ion-icon>
+    </ion-button>
+    <ion-button (click)="taskService.deleteTask(id)">
+      DELETE
+      <ion-icon slot="end" name="trash"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-card-header>
+    <ion-badge color="primary">{{type}}</ion-badge>
+    <ion-card-title>{{title}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ng-content></ng-content>
+  </ion-card-content>
+</ion-card>

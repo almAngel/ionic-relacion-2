@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ejercicio5
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="add()">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Add task
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let task of taskService.taskList">
+    <div *ngIf="task != undefined">
+      <app-task title="{{task.title}}" type="{{task.type}}" id="{{task.id}}">
+        {{task.description}}
+      </app-task>
+    </div>
+  </div>
+</ion-content>
