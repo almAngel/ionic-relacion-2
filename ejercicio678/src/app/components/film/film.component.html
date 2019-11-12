@@ -1,0 +1,28 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title (click)="onClick()">{{title}}</ion-card-title>
+    <ion-card-subtitle>{{year}}</ion-card-subtitle>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-badge color="danger" mode="ios">{{rated}}</ion-badge>
+    <ion-badge color="success" mode="ios" class="ion-margin-start">
+      <ion-icon name="star"></ion-icon>
+      <ion-label>{{metascore}}</ion-label>
+    </ion-badge>
+    <ion-img src="{{poster}}" (click)="onClick()" class="img-resize"></ion-img>
+    <div class="ion-padding" *ngIf="show">
+      <ion-label color="dark">
+        <h2>Released on: {{released}}</h2>
+      </ion-label>
+      <ion-label>
+        <h3>Director: {{director}}</h3>
+      </ion-label>
+      <ion-label class="ion-padding">
+        <p>{{plot}}</p>
+      </ion-label>
+    </div>
+    <ion-button (click)="delete()" expand="full">
+      Delete
+    </ion-button>
+  </ion-card-content>
+</ion-card>

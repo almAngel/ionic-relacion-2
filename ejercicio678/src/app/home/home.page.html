@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      ejercicio 6, 7 y 8
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let film of filmService.filmList">
+    <div *ngIf="film != undefined">
+      <app-film title="{{film.Title}}" year="{{film.Year}}" rated="{{film.Rated}}" poster="{{film.Poster}}"
+        released="{{film.Released}}" director="{{film.Director}}" metascore="{{film.Metascore}}" plot="{{film.Plot}}">
+      </app-film>
+    </div>
+  </div>
+</ion-content>
