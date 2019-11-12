@@ -10,7 +10,24 @@
     </ion-button>
   </ion-buttons>
   <ion-card-header>
-    <ion-badge color="primary">{{type}}</ion-badge>
+    <div *ngIf="type == 'Personal'">
+      <ion-chip color="primary" mode="ios" outline="false">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Personal</ion-label>
+      </ion-chip>
+    </div>
+    <div *ngIf="type == 'Trabajo'">
+      <ion-chip color="primary" mode="ios" outline="false">
+        <ion-icon name="briefcase"></ion-icon>
+        <ion-label>Trabajo</ion-label>
+      </ion-chip>
+    </div>
+    <div *ngIf="type == 'Estudios'">
+      <ion-chip color="primary" mode="ios" outline="false">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Estudios</ion-label>
+      </ion-chip>
+    </div>
     <ion-card-title>{{title}}</ion-card-title>
   </ion-card-header>
   <ion-card-content>

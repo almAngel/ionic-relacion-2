@@ -1,5 +1,5 @@
 export enum TaskType {
-    PERSON = "Person",
-    BRIEFCASE = "Briefcase",
-    BOOK = "Book"
+    PERSONAL = "Personal",
+    TRABAJO = "Trabajo",
+    ESTUDIOS = "Estudios"
 }
